@@ -1,8 +1,8 @@
 import React from "react";
 
 const Connexion = () => {
-  const [mail, setMail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [mail, setMail] = useState("");
+  // const [password, setPassword] = useState("");
   const handleMail = (e) => {
     setMail(e.target.value);
   };
@@ -32,6 +32,7 @@ const Connexion = () => {
             handlePassword(e);
           }}
         />
+        <button>Se connecter</button>
       </form>
     </div>
   );

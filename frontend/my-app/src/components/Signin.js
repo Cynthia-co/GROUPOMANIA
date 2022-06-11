@@ -26,11 +26,10 @@ const Signin = () => {
     <div>
       <form
         onSubmit={(e) => {
-          handleSubmit(e);
+          handleName(e);
         }}
       >
         <label> Nom:</label>
-        <br />
         <input
           type="text"
           value={name}
@@ -41,7 +40,6 @@ const Signin = () => {
         />
         <br />
         <label> Prénom:</label>
-        <br />
         <input
           type="text"
           value={surname}
@@ -52,7 +50,6 @@ const Signin = () => {
         />
         <br />
         <label> Email:</label>
-        <br />
         <input
           type="text"
           value={mail}
@@ -63,7 +60,6 @@ const Signin = () => {
         />
         <br />
         <label> Mot de passe:</label>
-        <br />
         <input
           type="text"
           value={password}
@@ -74,7 +70,6 @@ const Signin = () => {
         />
         <br />
         <label> Confirmation du mot de passe:</label>
-        <br />
         <input
           type="text"
           value={confirmPassword}
@@ -83,8 +78,8 @@ const Signin = () => {
             handleConfirmPassword(e);
           }}
         />
-        <br />
       </form>
+      <button>S'incrire</button>
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import Navigation from '../src/components/Navigation';
 import '../src/pages/Home';
 import Logo from './components/Logo';
+import Signin from './components/Signin';
+import Connexion from './components/Connexion';
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Home from './pages/Home';
@@ -19,8 +20,8 @@ const App = () => {
     <div className="App">
         <Logo />
        <h1>Bienvenue sur Groupomania, votre réseau social d'entreprise</h1>
-       <Navigation /> 
-     </div>
+      <Signin />
+        </div>
   );
 }
 

@@ -3,7 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40px;
+  width: 20px;
   pointer-events: none;
 }
 
@@ -14,6 +15,7 @@
 }
 
 .App-header {
+  text-align: center;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +37,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+img {
+  height: 120px;
+  width: auto;
+}
+
+form {
+  text-align: left;
+  margin : 20px;
+  padding: 20px;
+  
+}
+
+input {
+  margin-left: 20px;
+  border-color: rgb(255, 215, 215);
+
+}
+
+button {
+  background-color: rgb(255, 215, 215);
+  height: 50px;
+  width: 140px;
+  border-radius: 30px;
+  border-color: rgb(255, 215, 215);
+  border-style: solid;
+  box-shadow: 2px 2px 4px 4px rgb(218, 179, 179);
 }
