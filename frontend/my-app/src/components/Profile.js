@@ -17,43 +17,47 @@ const Profile = () => {
   return (
     <div>
       <form
-        onSubmit={(e) => {
-          handleSubmit(e);
-        }}
+         onSubmit={(e) => {
+           handlePseudo(e);
+         }}
       >
-        <label> Nouveau mot de passe:</label>
-        <br />
-        <input
-          type="text"
-          value={newPassword}
-          required
-          onChange={(e) => {
-            handleNewPassword(e);
-          }}
-        />
-        <br />
-        <label> Confirmation du nouveau mot de passe:</label>
-        <br />
-        <input
-          type="text"
-          value={confirmNewPassword}
-          required
-          onChange={(e) => {
-            handleConfirmNewPassword(e);
-          }}
-        />
-        <br />
-        <label> Pseudo:</label>
-        <br />
-        <input
-          type="text"
-          value={pseudo}
-          required
-          onChange={(e) => {
-            handlePseudo(e);
-          }}
-        />
-        <br />
+        <div className="item">
+          <label> Nouveau mot de passe:</label>
+          <input
+            type="text"
+            value={newPassword}
+            required
+            onChange={(e) => {
+              handleNewPassword(e);
+            }}
+          />
+        </div>
+        <div className="item">
+          <label> Confirmation du nouveau mot de passe:</label>
+          <input
+            type="text"
+            value={confirmNewPassword}
+            required
+            onChange={(e) => {
+              handleConfirmNewPassword(e);
+            }}
+          />
+        </div>
+        <div className="item">
+          <label> Pseudo:</label>
+          <input
+            type="text"
+            value={pseudo}
+            required
+            onChange={(e) => {
+              handlePseudo(e);
+            }}
+          />
+        </div>
+        <div className="item">
+          <label>Photo de profil</label>
+        </div>
+        <button>Enregistrer les modifications</button>
       </form>
     </div>
   );

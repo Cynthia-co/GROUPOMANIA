@@ -23,12 +23,13 @@ const Signin = () => {
   };
 
   return (
-    <div>
+    <div className="signbox">
       <form
         onSubmit={(e) => {
           handleName(e);
         }}
       >
+        <div className="item">
         <label> Nom:</label>
         <input
           type="text"
@@ -38,7 +39,8 @@ const Signin = () => {
             handleName(e);
           }}
         />
-        <br />
+        </div>
+        <div className="item">
         <label> Prénom:</label>
         <input
           type="text"
@@ -48,7 +50,8 @@ const Signin = () => {
             handleSurname(e);
           }}
         />
-        <br />
+        </div>
+        <div className="item">
         <label> Email:</label>
         <input
           type="text"
@@ -58,7 +61,8 @@ const Signin = () => {
             handleMail(e);
           }}
         />
-        <br />
+        </div>
+        <div className="item">
         <label> Mot de passe:</label>
         <input
           type="text"
@@ -68,7 +72,8 @@ const Signin = () => {
             handlePassword(e);
           }}
         />
-        <br />
+        </div>
+        <div className="item">
         <label> Confirmation du mot de passe:</label>
         <input
           type="text"
@@ -78,8 +83,10 @@ const Signin = () => {
             handleConfirmPassword(e);
           }}
         />
+        </div>
+        <button className="button" onClick="createProfile()">S'incrire</button>
       </form>
-      <button>S'incrire</button>
+      
     </div>
   );
 };

@@ -1,14 +1,13 @@
 import React from 'react';
-import Profile from './components/Profile';
 
 const Menu = () => {
     return (
         <div>
             <select>
-                <option>Modifier mon profil</option>
-                <option>Se déconnecter</option>
-                <option>Supprimer mon compte</option>
-                <option><Profile /></option>
+                <option onClick="changeProfile()">Modifier mon profil</option>
+                <option onClick="signout()">Se déconnecter</option>
+                <option onClick="deleteProfile()">Supprimer mon compte</option>
+                <option></option>
             </select>
         </div>
     );
