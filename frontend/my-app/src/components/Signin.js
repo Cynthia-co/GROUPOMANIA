@@ -30,63 +30,64 @@ const Signin = () => {
         }}
       >
         <div className="item">
-        <label> Nom:</label>
-        <input
-          type="text"
-          value={name}
-          required
-          onChange={(e) => {
-            handleName(e);
-          }}
-        />
+          <label> Nom:</label>
+          <input
+            type="text"
+            value={name}
+            required
+            onChange={(e) => {
+              handleName(e);
+            }}
+          />
         </div>
         <div className="item">
-        <label> Prénom:</label>
-        <input
-          type="text"
-          value={surname}
-          required
-          onChange={(e) => {
-            handleSurname(e);
-          }}
-        />
+          <label> Prénom:</label>
+          <input
+            type="text"
+            value={surname}
+            required
+            onChange={(e) => {
+              handleSurname(e);
+            }}
+          />
         </div>
         <div className="item">
-        <label> Email:</label>
-        <input
-          type="text"
-          value={mail}
-          required
-          onChange={(e) => {
-            handleMail(e);
-          }}
-        />
+          <label> Email:</label>
+          <input
+            type="text"
+            value={mail}
+            required
+            onChange={(e) => {
+              handleMail(e);
+            }}
+          />
         </div>
         <div className="item">
-        <label> Mot de passe:</label>
-        <input
-          type="text"
-          value={password}
-          required
-          onChange={(e) => {
-            handlePassword(e);
-          }}
-        />
+          <label> Mot de passe:</label>
+          <input
+            type="text"
+            value={password}
+            required
+            onChange={(e) => {
+              handlePassword(e);
+            }}
+          />
         </div>
         <div className="item">
-        <label> Confirmation du mot de passe:</label>
-        <input
-          type="text"
-          value={confirmPassword}
-          required
-          onChange={(e) => {
-            handleConfirmPassword(e);
-          }}
-        />
+          <label> Confirmation du mot de passe:</label>
+          <input
+            type="text"
+            value={confirmPassword}
+            required
+            onChange={(e) => {
+              handleConfirmPassword(e);
+            }}
+          />
         </div>
-        <button className="button" onClick="createProfile()">S'incrire</button>
+        <button className="button" onClick="createProfile()">
+          S'incrire
+        </button>
       </form>
-      
     </div>
   );
 };
