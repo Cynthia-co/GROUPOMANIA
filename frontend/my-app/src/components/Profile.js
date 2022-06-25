@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   const [pseudo, setPseudo] = useState("");
@@ -17,9 +18,9 @@ const Profile = () => {
   return (
     <div>
       <form
-         onSubmit={(e) => {
-           handlePseudo(e);
-         }}
+        onSubmit={(e) => {
+          handlePseudo(e);
+        }}
       >
         <div className="item">
           <label> Nouveau mot de passe:</label>
@@ -57,7 +58,9 @@ const Profile = () => {
         <div className="item">
           <label>Photo de profil</label>
         </div>
-        <button>Enregistrer les modifications</button>
+        <Link to="/welcome">
+          <button>Enregistrer les modifications</button>
+        </Link>
       </form>
     </div>
   );

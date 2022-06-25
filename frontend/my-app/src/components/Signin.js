@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const Signin = () => {
   const [name, setName] = useState("");
@@ -84,9 +85,11 @@ const Signin = () => {
             }}
           />
         </div>
-        <button className="button" onClick="createProfile()">
-          S'incrire
-        </button>
+        <Link to="/welcome">
+          <button className="button" onClick="createProfile()">
+            S'incrire
+          </button>
+        </Link>
       </form>
     </div>
   );
