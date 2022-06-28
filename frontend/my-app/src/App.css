@@ -14,6 +14,10 @@
   }
 }
 
+a{
+  text-decoration: none;
+}
+
 .App-header {
   text-align: center;
   background-color: #282c34;
@@ -39,11 +43,20 @@
   }
 }
 
-img {
-  height: 120px;
-  width: auto;
+.logo {
+  display: flex;
+  justify-content:center;
+ padding: 2%;
+  height: 20%;
+  width: 96%;
+  
 }
-
+h2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(70, 69, 69);
+}
 .signbox {
   display: inline-flex;
   width: 45%;
@@ -52,6 +65,16 @@ img {
   margin: 10px;
 }
 
+.navhome {
+  display: inline;
+ margin : 2%;
+ margin-top: 5%;
+  
+}
+.navhome:hover{
+  font-weight: bolder;
+  color:black;
+}
 .item {
   margin: 10px;
 }
@@ -75,8 +98,8 @@ input {
 
 button {
   background-color: rgb(255, 215, 215);
-  height: 50px;
-  width: 150px;
+  height: 60px;
+  width: 170px;
   border-radius: 30px;
   border-color: rgb(255, 215, 215);
   border-style: solid;
@@ -84,8 +107,10 @@ button {
   position: relative;
   margin-top: 20px;
   text-align: center; 
+  font-size: medium;
   font-weight: 900;
-  color: rgb(161, 134, 134);
+  color: rgb(253, 45, 1);
+  text-decoration: none;
 }
 
 .cards {
@@ -104,9 +129,9 @@ button {
   border-radius: 50%;
   width: fit-content;
   height: fit-content;
-  justify-content: end;
+ 
   align-self: flex-end;
-  margin: 10px;
+  
 }
 
 textarea{

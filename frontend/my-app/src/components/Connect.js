@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Connexion = () => {
+const Connect = () => {
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
   const handleMail = (e) => {
@@ -43,4 +43,4 @@ const Connexion = () => {
   );
 };
 
-export default Connexion;
+export default Connect;
