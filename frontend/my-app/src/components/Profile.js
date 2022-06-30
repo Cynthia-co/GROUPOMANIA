@@ -17,6 +17,7 @@ const Profile = () => {
 
   return (
     <div>
+      <h2>Modifiez votre profil:</h2>
       <form
         onSubmit={(e) => {
           handlePseudo(e);

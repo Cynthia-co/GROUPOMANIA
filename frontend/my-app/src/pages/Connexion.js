@@ -1,14 +1,13 @@
 import React from 'react';
 import Connect from '../components/Connect';
-import Header from '../components/Header';
+import Logoinline from '../components/Logoinline';
 
 
 const Connexion = () => {
     return (
         <div>
-           
-            <Header />
-            <Connect />
+           <Logoinline />
+           <Connect />
         </div>
     );
 };

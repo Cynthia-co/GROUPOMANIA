@@ -86,7 +86,7 @@ const Signin = () => {
             }}
           />
         </div>
-        <Link to="/welcome">
+        <Link to="/profile:id">
           <button className="button" onClick="createProfile()">
             S'incrire
           </button>

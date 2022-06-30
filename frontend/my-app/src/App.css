@@ -63,6 +63,8 @@ h2{
   border-color: rgb(255, 215, 215);
   border: thick double rgb(255, 215, 215);
   margin: 10px;
+  margin-top: 2%;
+  justify-content: center;
 }
 
 .navhome {
@@ -98,8 +100,8 @@ input {
 
 button {
   background-color: rgb(255, 215, 215);
-  height: 60px;
-  width: 170px;
+  height: 25%;
+  width: 50%;
   border-radius: 30px;
   border-color: rgb(255, 215, 215);
   border-style: solid;
@@ -111,7 +113,11 @@ button {
   font-weight: 900;
   color: rgb(253, 45, 1);
   text-decoration: none;
+  margin-left: 25%;
+  align-content: center;
 }
+
+
 
 .cards {
   display: flex;

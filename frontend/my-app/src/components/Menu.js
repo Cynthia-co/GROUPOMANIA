@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Link, Router, Route } from 'react-router-dom';
+import { BrowserRouter as Link } from 'react-router-dom';
 
 const Menu = () => {
     return (
         <div>
             <select>
                 <Link to="/profile">
-                <option onClick="changeProfile()">Modifier mon profil</option>
+                <option >Modifier mon profil</option>
                 </Link>
                 <Link to="/">
                 <option onClick="signout()">Se déconnecter</option>

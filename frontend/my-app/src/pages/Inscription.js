@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
+import Logoinline from '../components/Logoinline';
 import Signin from '../components/Signin';
 
 const Inscription = () => {
     return (
         <div>
-            <Header />
+            <Logoinline />
             <Signin />
         </div>
     );
