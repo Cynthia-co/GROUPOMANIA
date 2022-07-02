@@ -24,6 +24,6 @@ const Thread = () => {
       </ul>
     </div>
   );
-};
+}; 
 
 export default Thread;
