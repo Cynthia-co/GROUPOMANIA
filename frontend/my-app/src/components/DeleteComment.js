@@ -59,7 +59,7 @@ const DeleteComment = ({ comment, postId }) => {
                 }
               }}
             >
-                <FontAwesomeIcon icon="fa-solid fa-trash" />
+              <FontAwesomeIcon icon="fa-solid fa-trash" />
             </span>
           </div>
           <input type="submit" value="Enregistrer les modifications" />
