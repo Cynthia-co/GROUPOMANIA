@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updatePost } from "../actions/post.action";
+import Comment from "./Comment";
 import DeletePost from "./DeletePost";
 import LikeButton from "./LikeButton";
 
@@ -8,6 +9,8 @@ const Cards = ({ post }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isUpdated, setIsUpdated] = useState(false);
   const [textUpdate, setTextUpdate] = useState(null);
+  const [showComments, setShowComments] = useState(false);
+
   const usersData = useSelector((state) => state.usersReducer);
   const userData = useSelector((state) => state.userReducer);
   const dispatch = useDispatch();
@@ -87,12 +90,16 @@ const Cards = ({ post }) => {
       )}
       <DeletePost id={post._id} />
       <div className="comment">
-        <FontAwesomeIcon icon="fa-solid fa-comments" />
+        <FontAwesomeIcon
+          icon="fa-solid fa-comments"
+          onClick={() => setShowComments(!showComments)}
+        />
         <span>{post.comments.length}</span>
       </div>
       <div className="like">
         <LikeButton post={post} />
       </div>
+      {showComments && <Comment post={post} />}
     </li>
   );
 };
